@@ -1,0 +1,39 @@
+{
+  "standard": {
+    "description": "The default font used throughout the application.",
+    "fontFamily": "\"shantell-sans-variable\",sans-serif",
+    "weight": {
+      "light": 300,
+      "normal": 400,
+      "semibold": 600,
+      "bold": 700,
+      "black": 800
+    }
+  },
+  "header": {
+    "description": "Font family for the header. Same used in the logo.",
+    "fontFamily": "\"source-code-variable\",sans-serif",
+    "sampleText": "Elemancer",
+    "weight": {
+      "thin": 200,
+      "light": 300,
+      "regular": 400,
+      "semibold": 600,
+      "bold": 700,
+      "black": 900
+    }
+  },
+  "monospace": {
+    "description": "Monospace font used in cases such as lines of code.",
+    "fontFamily": "\"xanti-typewriter-variable\",monospace",
+    "weight": {
+      "hairline": 50,
+      "thin": 100,
+      "light": 300,
+      "normal": 400,
+      "semibold": 600,
+      "bold": 700,
+      "black": 800
+    }
+  }
+}

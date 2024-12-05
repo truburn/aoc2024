@@ -1,0 +1,16 @@
+import { Meta } from "@storybook/blocks";
+import { FontStoryBlock } from "./Font.storyBlock";
+
+<Meta title="Theme/Fonts" />
+
+# Fonts
+
+Here are the available fonts and samples of each one. They should be called according to their key within the CSS files and not by their <code>font-family</code> name.
+
+The fonts should be defined in the <code>/constants/fonts.json</code> file and linked in the <code>head</code> tag of the <code>index.html</code> file. To maintain standard weights and sizes, use the respective keys for each.
+
+To get access to the font variable information, import the fonts JSON file. <code>import fonts from "@constants/fonts.json";</code>
+
+Below are the available fonts for this application. Scroll down to see examples.
+
+<FontStoryBlock />

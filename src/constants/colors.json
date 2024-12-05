@@ -1,0 +1,46 @@
+{
+  "primary": {
+    "dark": "#E5EDF7",
+    "light": "#7DA7D9"
+  },
+  "secondary": {
+    "dark": "#EBEEE9",
+    "light": "#99A991"
+  },
+  "tertiary": {
+    "dark": "#E0E4E9",
+    "light": "#A1BDBE"
+  },
+  "accent": {
+    "dark": "#FEF4D4",
+    "light": "#FBC926"
+  },
+  "muted": {
+    "dark": "#627793",
+    "light": "#D7DCE2"
+  },
+  "bg": {
+    "dark": "#375270",
+    "light": "#ECF2F2"
+  },
+  "fg": {
+    "light": "#375270",
+    "dark": "#ECF2F2"
+  },
+  "info": {
+    "dark": "#A4C8E4",
+    "light": "#1C75BC"
+  },
+  "success": {
+    "dark": "#99D4B4",
+    "light": "#009444"
+  },
+  "warning": {
+    "dark": "#FCD4A5",
+    "light": "#F7941D"
+  },
+  "error": {
+    "dark": "#E5A5AB",
+    "light": "#BE1E2D"
+  }
+}
