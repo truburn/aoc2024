@@ -30,6 +30,7 @@ export default defineConfig({
       createAlias("navigation", "components"),
       createAlias("typography", "components"),
       createAlias("components"),
+      createAlias("entries"),
       createAlias("pages"),
       createAlias("styles"),
       createAlias("utils"),

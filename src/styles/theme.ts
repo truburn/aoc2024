@@ -1,12 +1,14 @@
+import colorData from "@constants/colors.json";
+import fontData from "@constants/fonts.json";
+import type { Theme } from "@emotion/react";
 import {
+  ColorVariant,
   defaultFontSizes,
   defaultFontWeights,
   FontDefinition,
-} from "@components/typography/types";
-import fontData from "@constants/fonts.json";
-import type { Theme } from "@emotion/react";
-import { ColorVariant, ThemeColor, ThemeFont } from "@styles/types";
-import colorData from "@constants/colors.json";
+  ThemeColor,
+  ThemeFont,
+} from "@styles/types";
 
 const fonts: FontDefinition = fontData;
 // Use the standard font for any other font group that is not defined

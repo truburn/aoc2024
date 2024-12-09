@@ -14,14 +14,14 @@ export default function GlobalStyles() {
           fontFamily: theme.font.standard.family,
           fontSize: theme.font.standard.size.regular,
           background: theme.color.bg,
-          color: theme.color.fg,
+          color: theme.color.fg
         },
         "#app-root": {
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        },
+          alignItems: "stretch",
+          justifyContent: "space-between"
+        }
       })}
     />
   );
