@@ -31,6 +31,7 @@ export function useNavigationClasses() {
     fontFamily: theme.font.header.family,
     fontSize: theme.font.header.size.xlarge,
     ...marginMixin({ bottom: 8 }),
+    color: theme.color.secondary,
   });
 
   const calendar = css({
