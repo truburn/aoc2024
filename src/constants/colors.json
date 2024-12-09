@@ -1,31 +1,31 @@
 {
   "primary": {
     "dark": "#E5EDF7",
-    "light": "#7DA7D9"
+    "light": "#A00209"
   },
   "secondary": {
     "dark": "#EBEEE9",
-    "light": "#99A991"
+    "light": "#E3572E"
   },
   "tertiary": {
     "dark": "#E0E4E9",
-    "light": "#A1BDBE"
+    "light": "#FCB040"
   },
   "accent": {
     "dark": "#FEF4D4",
-    "light": "#FBC926"
+    "light": "#058346"
   },
   "muted": {
     "dark": "#627793",
-    "light": "#D7DCE2"
+    "light": "#F4DC96"
   },
   "bg": {
     "dark": "#375270",
-    "light": "#ECF2F2"
+    "light": "#FEFEF6"
   },
   "fg": {
-    "light": "#375270",
-    "dark": "#ECF2F2"
+    "dark": "#ECF2F2",
+    "light": "#333132"
   },
   "info": {
     "dark": "#A4C8E4",

@@ -11,17 +11,26 @@ export function useNavigationClasses() {
       width: { right: 1 },
     }),
     background: theme.color.muted,
+    maxWidth: 250,
+    "& > p": {
+      ...paddingMixin({ horizontal: 16 }),
+      textAlign: "center",
+    },
   });
 
   const nav = css({
-    ...paddingMixin({ vertical: 24, horizontal: 16 }),
+    ...paddingMixin(8),
+    ...marginMixin({ horizontal: 8 }),
+    ...borderMixin({
+      color: theme.color.secondary,
+      width: { top: 1 },
+    }),
   });
 
   const title = css({
     fontFamily: theme.font.header.family,
-    fontWeight: theme.font.header.weight.normal,
     fontSize: theme.font.header.size.xlarge,
-    ...marginMixin({ top: 24, bottom: 8 }),
+    ...marginMixin({ bottom: 8 }),
   });
 
   const calendar = css({
@@ -34,7 +43,6 @@ export function useNavigationClasses() {
     alignItems: "stretch",
     justifyContent: "space-evenly",
     gap: 4,
-    width: 225,
     "& li": {
       ...marginMixin(),
       ...paddingMixin(),
@@ -49,18 +57,24 @@ export function useNavigationClasses() {
   const day = css({
     width: "100%",
     ...borderMixin(theme.border),
-    background: theme.color.primary,
-    color: theme.color.fg,
+    background: theme.color.tertiary,
+    color: theme.color.muted,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     fontFamily: theme.font.monospace.family,
-    fontWeight: theme.font.monospace.weight.bold,
     fontSize: theme.font.monospace.size.large,
+    fontVariationSettings: `"wght" ${theme.font.monospace.weight.semibold}`,
+    lineHeight: 1,
+    ...paddingMixin({ top: 2 }),
+    "&:hover": {
+      background: theme.color.secondary,
+      color: theme.color.muted,
+    },
   });
 
   const disabledDay = css({
-    opacity: 0.25,
+    opacity: 0.3,
     pointerEvents: "none",
     cursor: "not-allowed",
   });

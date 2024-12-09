@@ -14,9 +14,17 @@ export function useAppClasses() {
     flex: 1,
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    overflow: "auto",
+    alignItems: "stretch",
+    justifyContent: "stretch",
+    overflow: "hidden",
+    "& > div": {
+      flex: 1,
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "stretch",
+      justifyContent: "space-between",
+      overflow: "hidden",
+    },
   });
 
   return { root, content };

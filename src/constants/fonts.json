@@ -3,11 +3,11 @@
     "description": "The default font used throughout the application.",
     "fontFamily": "\"gluten-variable\",sans-serif",
     "weight": {
-      "light": 300,
-      "normal": 400,
-      "semibold": 600,
-      "bold": 700,
-      "black": 800
+      "light": 200,
+      "normal": 300,
+      "semibold": 500,
+      "bold": 600,
+      "black": 700
     }
   },
   "header": {

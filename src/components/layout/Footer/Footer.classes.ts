@@ -24,6 +24,7 @@ export function useFooterClasses() {
   });
 
   const link = css({
+    color: theme.color.muted,
     "& svg": {
       fontSize: theme.font.standard.size.large,
       ...marginMixin(4),

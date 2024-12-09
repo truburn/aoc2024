@@ -13,6 +13,7 @@ export default function GlobalStyles() {
           overflow: "hidden",
           fontFamily: theme.font.standard.family,
           fontSize: theme.font.standard.size.regular,
+          fontVariationSettings: `"wght" ${theme.font.standard.weight.light}`,
           background: theme.color.bg,
           color: theme.color.fg
         },

@@ -6,7 +6,7 @@ export function useLinkClasses() {
 
   const root = css({
     color: theme.color.accent,
-    fontWeight: theme.font.standard.weight.semibold,
+    fontVariationSettings: `"wght" ${theme.font.standard.weight.semibold}`,
     textDecoration: "none",
     transition: "ease all 0.5s",
     "&:hover": {
