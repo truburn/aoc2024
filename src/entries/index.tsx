@@ -1,5 +1,11 @@
-import day1 from "./Day1";
+import { ReactElement } from "react";
+import day1 from "./day1";
+
+export interface EntryProps {
+  entry: ReactElement;
+  demo?: ReactElement;
+}
 
 export default {
   day1
-} as any;
+} as Record<string, EntryProps>;

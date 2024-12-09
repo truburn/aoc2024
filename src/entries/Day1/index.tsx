@@ -1,8 +1,5 @@
-export default {
-  entry: (
-    <>
-      <p>This is the journal entry</p>
-      <p>And the content</p>
-    </>
-  )
-};
+import { EntryProps } from "@entries/index";
+import entry from "./entry";
+import demo from "./demo";
+
+export default { entry, demo } as EntryProps;
