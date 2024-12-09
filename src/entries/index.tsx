@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import day1 from "./day1";
+import day1 from "./day1/index";
 
 export interface EntryProps {
   entry: ReactElement;

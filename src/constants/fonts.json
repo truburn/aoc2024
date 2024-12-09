@@ -14,7 +14,7 @@
     "description": "Font family for the header. Same used in the logo.",
     "fontFamily": "\"adlery-pro-swash\",sans-serif",
     "weight": {
-      "regular": 700
+      "normal": 700
     }
   },
   "monospace": {
