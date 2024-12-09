@@ -1,6 +1,5 @@
 import { useAppClasses } from "@components/App";
 import Footer from "@layout/Footer";
-import Header from "@layout/Header";
 import Navigation from "@layout/Navigation";
 import { Outlet } from "react-router";
 
@@ -9,7 +8,6 @@ export function App() {
 
   return (
     <>
-      <Header />
       <div className={classes.root}>
         <Navigation />
         <main className={classes.content}>

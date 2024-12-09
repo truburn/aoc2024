@@ -20,7 +20,8 @@ export default function GlobalStyles() {
           display: "flex",
           flexDirection: "column",
           alignItems: "stretch",
-          justifyContent: "space-between"
+          justifyContent: "space-between",
+          overflow: "hidden"
         }
       })}
     />

@@ -7,6 +7,7 @@ export function useAppClasses() {
     flexDirection: "row",
     alignItems: "stretch",
     justifyContent: "space-between",
+    overflow: "hidden",
   });
 
   const content = css({
@@ -15,6 +16,7 @@ export function useAppClasses() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    overflow: "auto",
   });
 
   return { root, content };
