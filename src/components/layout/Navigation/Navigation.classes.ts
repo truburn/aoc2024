@@ -51,7 +51,7 @@ export function useNavigationClasses() {
       alignItems: "stretch",
       justifyContent: "stretch",
       aspectRatio: 1,
-      width: 40,
+      width: "calc(20% - 4px)",
     },
   });
 
@@ -75,13 +75,14 @@ export function useNavigationClasses() {
   });
 
   const disabledDay = css({
-    opacity: 0.3,
+    opacity: 0.5,
     pointerEvents: "none",
     cursor: "not-allowed",
   });
 
   const activeDay = css({
-    background: theme.color.secondary,
+    background: theme.color.primary,
+    color: theme.color.bg,
   });
 
   return { root, nav, title, calendar, day, disabledDay, activeDay };

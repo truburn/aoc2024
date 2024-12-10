@@ -10,16 +10,17 @@ export interface LinkProps {
 }
 
 export function Link(props: PropsWithChildren<LinkProps>) {
+  const { to = "#", className, external = false, title, children } = props;
   const classes = useLinkClasses();
 
   return (
     <a
-      href={props.to}
-      target={props.external ? "_blank" : "_self"}
-      title={props.title}
-      className={cx(classes.root, props.className)}
+      href={to}
+      target={external ? "_blank" : "_self"}
+      title={title}
+      className={cx(classes.root, className)}
     >
-      {props.children}
+      {children ?? to}
     </a>
   );
 }
