@@ -1,5 +1,5 @@
 import NoteCard from "@components/NoteCard";
-import Entry1 from "@entries/day1/Entry";
+import Entry1 from "./day1/Entry";
 
 const mapping: any = {
   day1: Entry1

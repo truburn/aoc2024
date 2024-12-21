@@ -1,7 +1,7 @@
 import { useEntryClasses } from "@entries/entryClasses";
 
 // The demo components for each day
-import Demo1 from "@entries/day1/Demo";
+import Demo1 from "./day1/Demo";
 
 const mapping: any = {
   day1: Demo1
