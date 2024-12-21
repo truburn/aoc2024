@@ -1,5 +1,3 @@
-export default (
-  <>
-    <p>The Demo Info</p>
-  </>
-);
+export default function Demo() {
+  return <div>The Demo for this day</div>;
+}

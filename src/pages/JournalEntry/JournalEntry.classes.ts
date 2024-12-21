@@ -1,13 +1,15 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
-import { borderMixin, paddingMixin } from "@styles/mixins";
+import { paddingMixin } from "@styles/mixins";
 
 export function useJournalEntryClasses() {
-  const theme = useTheme();
-
   const root = css({
-    ...borderMixin(theme.border),
-    ...paddingMixin(16),
+    ...paddingMixin(24),
+    "&&": {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 64,
+    },
   });
 
   return { root };

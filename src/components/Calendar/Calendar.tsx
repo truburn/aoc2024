@@ -1,8 +1,10 @@
 import { useCalendarClasses } from "@components/Calendar";
-import entries from "@entries/index";
+import entries from "@entries/entryTitles.json";
 import { useMemo } from "react";
 import { cx } from "@emotion/css";
 import Link from "@components/Link";
+
+const entryTitles: Record<string, string> = entries;
 
 export function Calendar() {
   const classes = useCalendarClasses();
@@ -11,7 +13,7 @@ export function Calendar() {
     return new Array(25).fill(0).map((_, idx) => {
       const day = idx + 1;
 
-      return [day, Boolean(entries[`day${day}`])];
+      return [day, Boolean(entryTitles[`day${day}`])];
     });
   }, []);
 
