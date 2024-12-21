@@ -19,6 +19,14 @@
     "dark": "#627793",
     "light": "#F4DC96"
   },
+  "card": {
+    "dark": "#F5EFE0",
+    "light": "#F5EFE0"
+  },
+  "cardBorder": {
+    "dark": "#D7CECA",
+    "light": "#D7CECA"
+  },
   "bg": {
     "dark": "#375270",
     "light": "#FEFEF6"

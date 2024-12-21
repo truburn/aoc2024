@@ -67,6 +67,8 @@ export enum ColorVariant {
   TERTIARY = "tertiary",
   ACCENT = "accent",
   MUTED = "muted",
+  CARD = "card",
+  CARD_BORDER = "cardBorder",
   BG = "bg",
   FG = "fg",
   INFO = "info",
