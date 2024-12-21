@@ -13,7 +13,7 @@ export function useNoteCardClasses() {
     height: "90%",
     maxWidth: 500,
     transform: `rotate(${randomRotation}deg)`,
-    background: `repeating-linear-gradient(0deg, lightblue, lightblue 1px, ${
+    background: `repeating-linear-gradient(to bottom, lightblue, lightblue 1px, ${
       theme.color.card
     } 1px, ${theme.color.card} ${lineSpacing + 1}px)`,
     boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.25)",
@@ -27,7 +27,7 @@ export function useNoteCardClasses() {
     ...marginMixin(),
     ...paddingMixin({ vertical: 4, horizontal: 16 }),
     lineHeight: 1,
-    height: (lineSpacing + 1) * 3 + lineSpacing / 3 + 2,
+    height: (lineSpacing + 1) * 4 + 1,
     display: "flex",
     flexDirection: "column-reverse",
     alignItems: "flex-start",
