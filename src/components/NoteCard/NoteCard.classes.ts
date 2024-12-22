@@ -10,7 +10,7 @@ export function useNoteCardClasses() {
     Math.random() * 3 * (Math.round(Math.random()) === 1 ? 1 : -1);
 
   const root = css({
-    height: "90%",
+    height: "95%",
     maxWidth: 500,
     transform: `rotate(${randomRotation}deg)`,
     background: `repeating-linear-gradient(to bottom, lightblue, lightblue 1px, ${
@@ -53,7 +53,7 @@ export function useNoteCardClasses() {
   });
 
   const content = css({
-    ...marginMixin({ horizontal: 16, top: lineSpacing + lineSpacing / 3 }),
+    ...marginMixin({ horizontal: 16, top: lineSpacing + 1 }),
     lineHeight: `${lineSpacing + 1}px`,
     fontSize: lineSpacing,
     "& > p": {

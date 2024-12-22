@@ -13,12 +13,15 @@ export function Home() {
         subtitle="Advent of Code 2024"
       >
         <p>
-          The Chief Historian for the North Pole has gone missing and he needs
-          to be found before the big Sleigh Ride.
+          The Chief Historian for the North Pole has been missing for months and
+          he needs to be found before the big Sleigh Ride. He decided to check
+          out some locations that have historically significance to the North
+          Pole, but didn't tell anyone where he was going.
         </p>
         <p>
-          There are 25 days left until the big day, and each day I find a new
-          clue that needs to be solved.
+          There are 25 days left until the big day, so the Senior Historians
+          have asked me to help them find him. There are 50 possible locations
+          to check. This is going to be interesting.
         </p>
         <p>Follow along on my journey to find him and get him back in time!</p>
         <p>For each clue I solve, a journal entry will be available.</p>
