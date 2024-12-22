@@ -4,7 +4,7 @@ import { borderMixin, marginMixin, paddingMixin } from "@styles/mixins";
 
 export function useNoteCardClasses() {
   const theme = useTheme();
-  const lineSpacing = 19;
+  const lineSpacing = 20;
 
   const randomRotation =
     Math.random() * 3 * (Math.round(Math.random()) === 1 ? 1 : -1);
@@ -54,7 +54,8 @@ export function useNoteCardClasses() {
 
   const content = css({
     ...marginMixin({ horizontal: 16, top: lineSpacing + lineSpacing / 3 }),
-    lineHeight: 1.25,
+    lineHeight: `${lineSpacing + 1}px`,
+    fontSize: lineSpacing,
     "& > p": {
       ...marginMixin({ bottom: lineSpacing + 1 }),
     },

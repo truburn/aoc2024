@@ -26,6 +26,7 @@ import Entry22 from "@entries/day22/Entry";
 import Entry23 from "@entries/day23/Entry";
 import Entry24 from "@entries/day24/Entry";
 import Entry25 from "@entries/day25/Entry";
+import Link from "@components/Link";
 
 const mapping: any = {
   day1: Entry1,
@@ -64,8 +65,15 @@ export default function DynamicEntry(props: DynamicEntryProps) {
   if (!props.day) return <p>Entry not found.</p>;
 
   const Component = mapping[`day${props.day}`];
+  const solutionLink = `https://github.com/truburn/aoc2024/blob/main/src/entries/day${props.day}/solution.ts`;
+
   return (
     <NoteCard title={props.title} subtitle={`Day ${props.day}`}>
+      <p>
+        <Link to={solutionLink} external>
+          <i className="fa-brands fa-github"></i> View the Code
+        </Link>
+      </p>
       <Component />
     </NoteCard>
   );

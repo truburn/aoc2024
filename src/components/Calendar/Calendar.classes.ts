@@ -48,7 +48,7 @@ export function useCalendarClasses() {
     ...paddingMixin({ top: 2 }),
     "&:hover": {
       background: theme.color.secondary,
-      color: theme.color.muted,
+      color: theme.color.bg,
     },
   });
 
