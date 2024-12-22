@@ -34,7 +34,7 @@ export function useNoteCardClasses() {
     justifyContent: "center",
     fontFamily: theme.font.header.family,
     fontWeight: theme.font.header.weight.normal,
-    fontSize: theme.font.header.size.xlarge - 4,
+    fontSize: theme.font.header.size.xlarge,
     color: theme.color.primary,
     background: theme.color.card,
     gap: 6,
