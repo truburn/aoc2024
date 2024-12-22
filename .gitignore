@@ -27,3 +27,9 @@ dist-ssr
 
 .env
 coverage
+input
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
