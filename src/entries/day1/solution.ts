@@ -1,8 +1,9 @@
-import inputData from "./input";
+import inputData from "@entries/day1/input";
 
 export interface InputData {
   list1: number[];
   list2: number[];
+  display: Array<number[]>;
 }
 
 /****************************************************
@@ -17,17 +18,19 @@ export interface InputData {
  * converted into numbers and then placed into new arrays for each list. The
  * individual lists are then returned for further processing.
  */
-export function useInputData(): InputData {
+export function useInputData(rawData: string = inputData): InputData {
   const list1: number[] = [];
   const list2: number[] = [];
+  const display: Array<number[]> = [];
 
-  inputData.split("\n").forEach((line) => {
+  rawData.split("\n").forEach((line) => {
     const [val1, val2] = line.split(/\s+/).map((val) => parseInt(val));
     list1.push(val1);
     list2.push(val2);
+    display.push([val1, val2]);
   });
 
-  return { list1, list2 };
+  return { list1, list2, display };
 }
 
 /*******************************************************************************
@@ -45,16 +48,23 @@ export function useInputData(): InputData {
 export function getTotalDistance({ list1, list2 }: InputData) {
   const sortedList1 = list1.sort();
   const sortedList2 = list2.sort();
+  const display: Array<number[]> = [];
 
   const distances = sortedList1.map((val1, idx) => {
     const val2 = sortedList2[idx];
-    if (val1 > val2) return val1 - val2;
-    return val2 - val1;
+    let distance = 0;
+    if (val1 > val2) {
+      distance = val1 - val2;
+    } else {
+      distance = val2 - val1;
+    }
+    display.push([val1, val2, distance]);
+    return distance;
   });
 
   const total = distances.reduce((prev, curr) => prev + curr);
 
-  return { sortedList1, sortedList2, distances, total };
+  return { total, display };
 }
 
 /*******************************************************************************
@@ -69,13 +79,23 @@ export function getTotalDistance({ list1, list2 }: InputData) {
  ******************************************************************************/
 export function getSimilarityScore({ list1, list2 }: InputData) {
   const similarities: number[] = [];
+  const display: Array<number[]> = [];
 
   list1.forEach((val) => {
     const count = list2.filter((v) => v === val).length;
     similarities.push(val * count);
+    display.push([val, count]);
+  });
+
+  display.sort((a, b) => {
+    const valA = a[1];
+    const valB = b[1];
+    if (valA > valB) return -1;
+    if (valA < valB) return 1;
+    return 0;
   });
 
   const total = similarities.reduce((prev, curr) => prev + curr);
 
-  return { total };
+  return { total, display };
 }
